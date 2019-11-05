@@ -35,3 +35,32 @@ https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/
 An extension to fold code by section
 
 image::https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/_images/codefolding_indent_unfolded.png[]
+
+
+
+== Add a run above and this cell keyboard shortcut
+
+To add a shortcut to run all cells above and the current:
+
+. add in head cell
++
+```
+%load_ext autoreload
+%autoreload 2
+```
++
+. add in a cell bellow
+```
+%%javascript
+
+Jupyter.keyboard_manager.command_shortcuts.add_shortcut('r', {
+    help : 'run all cells',
+    help_index : 'zz',
+    handler : function (event) {
+        IPython.notebook.execute_cell_range(0, IPython.notebook.get_selected_index()+1);
+        return false;
+    }}
+);
+```
+
+This make kbd:[r] a keybord shorcut to run all cell above and the current one.

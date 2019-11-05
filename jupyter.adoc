@@ -28,3 +28,10 @@ https://github.com/ipython-contrib/jupyter_contrib_nbextensions
 A jupyter extensions to have a two columns presentation
 
 https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/splitcell
+
+
+== Code Folding
+
+An extension to fold code by section
+
+image::https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/_images/codefolding_indent_unfolded.png[]

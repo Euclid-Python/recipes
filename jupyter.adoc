@@ -1,0 +1,30 @@
+= Jupyter
+:toc:
+Feel free to add  yours
+
+== jupyter_contrib_nbextensions
+
+A **must-have**.
+
+Install with conda or pip
+
+=== Install css 
+
+`jupyter contrib nbextension install --sys-prefix` if you get a virtual env
+
+=== Enable or dsiable plugins
+
+* To enable an extension : 
+`jupyter nbextension enable <path/to/plugin>`
+* To disable an extension : 
+`jupyter nbextension enable <path/to/plugin>`
+
+=== Ressources
+
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+
+== Split cell
+
+A jupyter extensions to have a two columns presentation
+
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions/tree/master/src/jupyter_contrib_nbextensions/nbextensions/splitcell

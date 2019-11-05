@@ -63,4 +63,4 @@ Jupyter.keyboard_manager.command_shortcuts.add_shortcut('r', {
 );
 ```
 
-This make kbd:[r] a keybord shorcut to run all cell above and the current one.
+This makes `r` a keybord shorcut to run all cell above and the current one.
